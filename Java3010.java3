@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Informe o saldo: ");
+        double saldo = sc.nextDouble();
+
+        double novoSaldo = saldo * 1.01;
+
+        System.out.println("Saldo com reajuste de 1%: R$ " + novoSaldo);
+
+        sc.close();
+    }
+}
