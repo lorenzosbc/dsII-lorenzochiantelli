@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        final double SALARIO_MINIMO = 788.00;
+
+        System.out.print("Informe o salário do usuário: ");
+        double salarioUsuario = sc.nextDouble();
+
+        double quantidade = salarioUsuario / SALARIO_MINIMO;
+
+        System.out.printf("O usuário ganha %.2f salários mínimos.%n", quantidade);
+
+        sc.close();
+    }
+}
