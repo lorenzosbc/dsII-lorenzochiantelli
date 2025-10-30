@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Informe a porcentagem do IPI: ");
+        double ipi = sc.nextDouble();
+
+        System.out.print("Código da peça 1: ");
+        int cod1 = sc.nextInt();
+        System.out.print("Valor unitário da peça 1: ");
+        double valor1 = sc.nextDouble();
+        System.out.print("Quantidade da peça 1: ");
+        int quant1 = sc.nextInt();
+
+        System.out.print("Código da peça 2: ");
+        int cod2 = sc.nextInt();
+        System.out.print("Valor unitário da peça 2: ");
+        double valor2 = sc.nextDouble();
+        System.out.print("Quantidade da peça 2: ");
+        int quant2 = sc.nextInt();
+
+        double total = (valor1 * quant1 + valor2 * quant2) * (1 + ipi / 100);
+        System.out.println("Valor total a pagar: R$ " + total);
+
+        sc.close();
+    }
+}
